@@ -140,6 +140,7 @@
     <installer>
       <script id='http://microsoft.com/windows/unattend/jeos'/>
       <script id='http://microsoft.com/windows/unattend/desktop'/>
+      <script id='http://microsoft.com/windows/unattend/uefi'/>
 
       <!--
           User avatar not being set for Windows 8 (or newer).
@@ -147,6 +148,7 @@
           https://bugzilla.redhat.com/show_bug.cgi?id=1328637
       -->
       <script id='http://microsoft.com/windows/cmd/desktop'/>
+      <script id='http://microsoft.com/windows/cmd/uefi'/>
     </installer>
   </os>
 </libosinfo>
