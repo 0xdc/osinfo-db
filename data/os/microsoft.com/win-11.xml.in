@@ -33,5 +33,10 @@
         <storage>68719476736</storage>
       </minimum>
     </resources>
+
+    <installer>
+      <script id='http://microsoft.com/windows/unattend/uefi'/>
+      <script id='http://microsoft.com/windows/cmd/uefi'/>
+    </installer>
   </os>
 </libosinfo>
