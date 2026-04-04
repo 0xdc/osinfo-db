@@ -42,6 +42,30 @@
     <variant id="xen">
       <name>Alpine Linux 3.21 Xen</name>
     </variant>
+    <variant id="bios-tiny">
+      <name>Alpine Linux 3.21 Cloud (bios, tiny)</name>
+    </variant>
+    <variant id="bios-cloudinit">
+      <name>Alpine Linux 3.21 Cloud (bios, cloudinit)</name>
+    </variant>
+    <variant id="uefi-tiny">
+      <name>Alpine Linux 3.21 Cloud (uefi, tiny)</name>
+    </variant>
+    <variant id="uefi-cloudinit">
+      <name>Alpine Linux 3.21 Cloud (uefi, cloudinit)</name>
+    </variant>
+    <variant id="bios-tiny-metal">
+      <name>Alpine Linux 3.21 Cloud (bios, tiny, metal)</name>
+    </variant>
+    <variant id="bios-cloudinit-metal">
+      <name>Alpine Linux 3.21 Cloud (bios, cloudinit, metal)</name>
+    </variant>
+    <variant id="uefi-tiny-metal">
+      <name>Alpine Linux 3.21 Cloud (uefi, tiny, metal)</name>
+    </variant>
+    <variant id="uefi-cloudinit-metal">
+      <name>Alpine Linux 3.21 Cloud (uefi, cloudinit, metal)</name>
+    </variant>
 
     <!-- Standard Installer !-->
     <media arch="aarch64">
@@ -176,5 +200,66 @@
       <kernel>boot/vmlinuz-lts</kernel>
       <initrd>boot/initramfs-lts</initrd>
     </media>
+
+    <!-- Cloud Images !-->
+    <image arch="aarch64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-aarch64-uefi-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="aarch64" format="qcow2">
+      <variant id="uefi-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-aarch64-uefi-tiny-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="bios-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-bios-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="bios-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-bios-tiny-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-uefi-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="uefi-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-uefi-tiny-r0.qcow2</url>
+    </image>
+
+    <image arch="aarch64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-aarch64-uefi-cloudinit-metal-r0.qcow2</url>
+    </image>
+
+    <image arch="aarch64" format="qcow2">
+      <variant id="uefi-tiny-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-aarch64-uefi-tiny-metal-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="bios-cloudinit-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-bios-cloudinit-metal-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="bios-tiny-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-bios-tiny-metal-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-uefi-cloudinit-metal-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="uefi-tiny-metal"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/generic_alpine-3.21.7-x86_64-uefi-tiny-metal-r0.qcow2</url>
+    </image>
   </os>
 </libosinfo>

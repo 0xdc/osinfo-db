@@ -42,6 +42,18 @@
     <variant id="xen">
       <name>Alpine Linux 3.18 Xen</name>
     </variant>
+    <variant id="bios-tiny">
+      <name>Alpine Linux 3.18 Cloud (bios, tiny)</name>
+    </variant>
+    <variant id="bios-cloudinit">
+      <name>Alpine Linux 3.18 Cloud (bios, cloudinit)</name>
+    </variant>
+    <variant id="uefi-tiny">
+      <name>Alpine Linux 3.18 Cloud (uefi, tiny)</name>
+    </variant>
+    <variant id="uefi-cloudinit">
+      <name>Alpine Linux 3.18 Cloud (uefi, cloudinit)</name>
+    </variant>
 
     <!-- Standard Installer !-->
     <media arch="aarch64">
@@ -167,5 +179,36 @@
       <kernel>boot/vmlinuz-lts</kernel>
       <initrd>boot/initramfs-lts</initrd>
     </media>
+
+    <!-- Cloud Images !-->
+    <image arch="aarch64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-aarch64-uefi-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="aarch64" format="qcow2">
+      <variant id="uefi-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-aarch64-uefi-tiny-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="bios-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-x86_64-bios-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="bios-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-x86_64-bios-tiny-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2" cloud-init="true">
+      <variant id="uefi-cloudinit"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-x86_64-uefi-cloudinit-r0.qcow2</url>
+    </image>
+
+    <image arch="x86_64" format="qcow2">
+      <variant id="uefi-tiny"/>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/cloud/nocloud_alpine-3.18.11-x86_64-uefi-tiny-r0.qcow2</url>
+    </image>
   </os>
 </libosinfo>
