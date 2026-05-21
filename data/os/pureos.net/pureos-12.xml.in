@@ -1,0 +1,72 @@
+<libosinfo version="0.0.1">
+<!-- Licensed under the GNU General Public License version 2 or later.
+     See http://www.gnu.org/licenses/ for a copy of the license text -->
+  <os id="http://pureos.net/pureos/12">
+    <short-id>pureos12</short-id>
+    <short-id>pureosdawn</short-id>
+    <name>PureOS 12</name>
+    <version>12</version>
+    <vendor>Purism, SPC</vendor>
+    <family>linux</family>
+    <distro>pureos</distro>
+    <codename>dawn</codename>
+    <upgrades id="http://pureos.net/pureos/11"/>
+    <derives-from id="http://debian.org/debian/13"/>
+
+    <release-status>prerelease</release-status>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>2147483648</ram>
+        <storage>8589934592</storage>
+      </minimum>
+      <recommended>
+        <cpu>1500000000</cpu>
+        <ram>4294967296</ram>
+        <storage>16106127360</storage>
+      </recommended>
+    </resources>
+
+    <variant id="gnome">
+      <name>PureOS 12 GNOME</name>
+    </variant>
+
+    <variant id="plasma">
+      <name>PureOS 12 KDE Plasma</name>
+    </variant>
+
+    <variant id="gnome-oem">
+      <name>PureOS 12 GNOME (OEM)</name>
+    </variant>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome"/>
+      <iso>
+        <volume-id>PureOS 12(~devel|\.\d)? gnome \(live\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="plasma"/>
+      <iso>
+        <volume-id>PureOS 12(~devel|\.\d)? plasma \(live\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome-oem"/>
+      <iso>
+        <volume-id>PureOS 12(~devel|\.\d)? gnome \(oem\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+  </os>
+
+</libosinfo>

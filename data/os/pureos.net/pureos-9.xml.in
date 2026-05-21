@@ -3,12 +3,18 @@
      See http://www.gnu.org/licenses/ for a copy of the license text -->
   <os id="http://pureos.net/pureos/9">
     <short-id>pureos9</short-id>
-    <name>PureOS</name>
+    <short-id>pureosamber</short-id>
+    <name>PureOS 9</name>
     <version>9</version>
     <vendor>Purism, SPC</vendor>
     <family>linux</family>
     <distro>pureos</distro>
-    <derives-from id="http://debian.org/debian/9"/>
+    <codename>amber</codename>
+    <upgrades id="http://pureos.net/pureos/8"/>
+    <derives-from id="http://debian.org/debian/10"/>
+
+    <release-date>2019-10-28</release-date>
+    <eol-date>2024-06-30</eol-date>
 
     <resources arch="all">
       <minimum>
@@ -24,10 +30,43 @@
       </recommended>
     </resources>
 
+    <variant id="gnome">
+      <name>PureOS 9 GNOME</name>
+    </variant>
+
+    <variant id="plasma">
+      <name>PureOS 9 KDE Plasma</name>
+    </variant>
+
+    <variant id="gnome-oem">
+      <name>PureOS 9 GNOME (OEM)</name>
+    </variant>
+
     <media arch="x86_64" live="true">
+      <variant id="gnome"/>
       <url>https://downloads.puri.sm/amber/live/gnome/2020-08-06/pureos-9.0-gnome-live_20200806-amd64.hybrid.iso</url>
       <iso>
-	<volume-id>PureOS 9.0 GNOME Live</volume-id>
+        <volume-id>PureOS 9.0 GNOME Live</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome"/>
+      <url>https://downloads.puri.sm/amber/live/plasma/2020-08-06/pureos-9.0-plasma-live_20200806-amd64.hybrid.iso</url>
+      <iso>
+        <volume-id>PureOS 9.0 KDE Plasma Live</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome-oem"/>
+      <url>https://downloads.puri.sm/amber/oem/gnome/2020-08-06/pureos-9.0-gnome-oem_20200806-amd64.hybrid.iso</url>
+      <iso>
+        <volume-id>PureOS 9.0 GNOME OEM</volume-id>
       </iso>
       <kernel>casper/vmlinuz</kernel>
       <initrd>casper/initrd.img</initrd>

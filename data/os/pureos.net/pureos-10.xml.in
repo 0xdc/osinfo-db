@@ -3,23 +3,29 @@
      See http://www.gnu.org/licenses/ for a copy of the license text -->
   <os id="http://pureos.net/pureos/10">
     <short-id>pureos10</short-id>
-    <name>PureOS</name>
+    <short-id>pureosbyzantium</short-id>
+    <name>PureOS 10</name>
     <version>10</version>
     <vendor>Purism, SPC</vendor>
     <family>linux</family>
     <distro>pureos</distro>
-    <derives-from id="http://debian.org/debian/10"/>
+    <codename>byzantium</codename>
+    <upgrades id="http://pureos.net/pureos/9"/>
+    <derives-from id="http://debian.org/debian/11"/>
+
+    <release-date>2021-11-18</release-date>
+    <eol-date>2026-08-31</eol-date>
 
     <resources arch="all">
       <minimum>
         <cpu>1000000000</cpu>
         <n-cpus>1</n-cpus>
-        <ram>1073741824</ram>
+        <ram>2147483648</ram>
         <storage>5368709120</storage>
       </minimum>
       <recommended>
         <cpu>1000000000</cpu>
-        <ram>1073741824</ram>
+        <ram>4294967296</ram>
         <storage>16106127360</storage>
       </recommended>
     </resources>
@@ -27,8 +33,13 @@
     <variant id="gnome">
       <name>PureOS 10 GNOME</name>
     </variant>
-    <variant id="kde">
-      <name>PureOS 10 KDE</name>
+
+    <variant id="plasma">
+      <name>PureOS 10 KDE Plasma</name>
+    </variant>
+
+    <variant id="gnome-oem">
+      <name>PureOS 10 GNOME (OEM)</name>
     </variant>
 
     <media arch="x86_64" live="true">
@@ -42,10 +53,20 @@
     </media>
 
     <media arch="x86_64" live="true">
-      <variant id="kde"/>
+      <variant id="plasma"/>
       <url>https://downloads.puri.sm/byzantium/plasma/2023-06-14/pureos-10.3-plasma-live-20230614_amd64.iso</url>
       <iso>
-	<volume-id>PureOS 10(~devel|\.\d) plasma \(live\)</volume-id>
+        <volume-id>PureOS 10(~devel|\.\d) plasma \(live\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome-oem"/>
+      <url>https://downloads.puri.sm/byzantium/gnome-oem/2023-06-14/pureos-10.3-gnome-oem-20230614_amd64.iso</url>
+      <iso>
+        <volume-id>PureOS 10(~devel|\.\d) gnome \(oem\)</volume-id>
       </iso>
       <kernel>casper/vmlinuz</kernel>
       <initrd>casper/initrd.img</initrd>

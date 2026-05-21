@@ -1,0 +1,76 @@
+<libosinfo version="0.0.1">
+<!-- Licensed under the GNU General Public License version 2 or later.
+     See http://www.gnu.org/licenses/ for a copy of the license text -->
+  <os id="http://pureos.net/pureos/11">
+    <short-id>pureos11</short-id>
+    <short-id>pureoscrimson</short-id>
+    <name>PureOS 11</name>
+    <version>11</version>
+    <vendor>Purism, SPC</vendor>
+    <family>linux</family>
+    <distro>pureos</distro>
+    <codename>crimson</codename>
+    <upgrades id="http://pureos.net/pureos/10"/>
+    <derives-from id="http://debian.org/debian/12"/>
+
+    <release-date>2026-05-20</release-date>
+    <eol-date>2028-06-30</eol-date>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>2147483648</ram>
+        <storage>8589934592</storage>
+      </minimum>
+      <recommended>
+        <cpu>1500000000</cpu>
+        <ram>4294967296</ram>
+        <storage>16106127360</storage>
+      </recommended>
+    </resources>
+
+    <variant id="gnome">
+      <name>PureOS 11 GNOME</name>
+    </variant>
+
+    <variant id="plasma">
+      <name>PureOS 11 KDE Plasma</name>
+    </variant>
+
+    <variant id="gnome-oem">
+      <name>PureOS 11 GNOME (OEM)</name>
+    </variant>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome"/>
+      <url>https://downloads.puri.sm/crimson/gnome/2026-05-15/pureos-11-gnome-live-20260515_amd64.iso</url>
+      <iso>
+        <volume-id>PureOS 11(~devel|\.\d)? gnome \(live\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="plasma"/>
+      <url>https://downloads.puri.sm/crimson/plasma/2026-05-15/pureos-11-plasma-live-20260515_amd64.iso</url>
+      <iso>
+        <volume-id>PureOS 11(~devel|\.\d)? plasma \(live\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+
+    <media arch="x86_64" live="true">
+      <variant id="gnome-oem"/>
+      <url>https://downloads.puri.sm/crimson/gnome-oem/2026-05-15/pureos-11-gnome-oem-20260515_amd64.iso</url>
+      <iso>
+        <volume-id>PureOS 11(~devel|\.\d)? gnome \(oem\)</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+  </os>
+
+</libosinfo>

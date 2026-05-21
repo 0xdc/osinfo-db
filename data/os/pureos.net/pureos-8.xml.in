@@ -3,13 +3,11 @@
      See http://www.gnu.org/licenses/ for a copy of the license text -->
   <os id="http://pureos.net/pureos/8">
     <short-id>pureos8</short-id>
-    <name>PureOS</name>
+    <name>PureOS 8</name>
     <version>8</version>
     <vendor>Purism, SPC</vendor>
     <family>linux</family>
     <distro>pureos</distro>
-
-    <release-status>prerelease</release-status>
 
     <resources arch="all">
       <minimum>
