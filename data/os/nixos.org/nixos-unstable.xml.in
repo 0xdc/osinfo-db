@@ -9,8 +9,8 @@
     <family>linux</family>
     <distro>nixos</distro>
 
-    <upgrades id="http://nixos.org/nixos/25.11"/>
-    <derives-from id="http://nixos.org/nixos/25.11"/>
+    <upgrades id="http://nixos.org/nixos/26.05"/>
+    <derives-from id="http://nixos.org/nixos/26.05"/>
 
     <resources arch="all">
       <minimum>
@@ -34,7 +34,7 @@
       <variant id="minimal"/>
       <url>https://channels.nixos.org/nixos-unstable/latest-nixos-minimal-x86_64-linux.iso</url>
       <iso>
-        <volume-id>nixos-minimal-26.05-x86_64</volume-id>
+        <volume-id>nixos-minimal-26.11-x86_64</volume-id>
       </iso>
       <kernel>boot/bzImage</kernel>
       <initrd>boot/initrd</initrd>
@@ -44,7 +44,7 @@
       <variant id="graphical"/>
       <url>https://channels.nixos.org/nixos-unstable/latest-nixos-graphical-x86_64-linux.iso</url>
       <iso>
-        <volume-id>nixos-graphical-26.05-x86_64</volume-id>
+        <volume-id>nixos-graphical-26.11-x86_64</volume-id>
       </iso>
       <kernel>boot/bzImage</kernel>
       <initrd>boot/initrd</initrd>
@@ -54,7 +54,7 @@
       <variant id="minimal"/>
       <url>https://channels.nixos.org/nixos-unstable/latest-nixos-minimal-aarch64-linux.iso</url>
       <iso>
-        <volume-id>nixos-minimal-26.05-aarch64</volume-id>
+        <volume-id>nixos-minimal-26.11-aarch64</volume-id>
       </iso>
       <kernel>boot/Image</kernel>
       <initrd>boot/initrd</initrd>
@@ -64,7 +64,7 @@
       <variant id="graphical"/>
       <url>https://channels.nixos.org/nixos-unstable/latest-nixos-graphical-aarch64-linux.iso</url>
       <iso>
-        <volume-id>nixos-graphical-26.05-aarch64</volume-id>
+        <volume-id>nixos-graphical-26.11-aarch64</volume-id>
       </iso>
       <kernel>boot/Image</kernel>
       <initrd>boot/initrd</initrd>
