@@ -7,7 +7,7 @@
 FROM registry.opensuse.org/opensuse/leap:16.0
 
 RUN zypper update -y && \
-    zypper install -y \
+    zypper install -y --allow-downgrade \
            ca-certificates \
            ccache \
            gcc \

@@ -6,7 +6,7 @@
 
 function install_buildenv() {
     zypper update -y
-    zypper install -y \
+    zypper install -y --allow-downgrade \
            ca-certificates \
            ccache \
            gcc \
