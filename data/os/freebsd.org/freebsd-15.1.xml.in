@@ -1,0 +1,81 @@
+<libosinfo version="0.0.1">
+<!-- Licensed under the GNU General Public License version 2 or later.
+     See http://www.gnu.org/licenses/ for a copy of the license text -->
+  <os id="http://freebsd.org/freebsd/15.1">
+    <short-id>freebsd15.1</short-id>
+    <name>FreeBSD 15.1</name>
+    <version>15.1</version>
+    <vendor>FreeBSD Project</vendor>
+    <family>freebsd</family>
+    <distro>freebsd</distro>
+    <upgrades id="http://freebsd.org/freebsd/15.0"/>
+    <derives-from id="http://freebsd.org/freebsd/15.0"/>
+
+    <release-date>2026-06-16</release-date>
+    <eol-date>2027-05-31</eol-date>
+
+    <media arch="x86_64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-amd64-dvd1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_AMD64_DVD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>4604717056</volume-size>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-amd64-disc1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_AMD64_CD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>1351948288</volume-size>
+      </iso>
+    </media>
+    <media arch="aarch64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-arm64-aarch64-dvd1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_AARCH64_DVD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>4298536960</volume-size>
+      </iso>
+    </media>
+    <media arch="aarch64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-arm64-aarch64-disc1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_AARCH64_CD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>1196472320</volume-size>
+      </iso>
+    </media>
+    <media arch="ppc64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-powerpc-powerpc64-disc1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_POWERPC64_CD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>1037944832</volume-size>
+      </iso>
+    </media>
+    <media arch="ppc64le">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-powerpc-powerpc64le-disc1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_POWERPC64LE_CD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>1033259008</volume-size>
+      </iso>
+    </media>
+    <media arch="riscv64">
+      <url>https://download.freebsd.org/releases/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-riscv-riscv64-disc1.iso</url>
+      <iso>
+        <volume-id>15_1_RELEASE_RISCV64_CD</volume-id>
+        <system-id>FreeBSD</system-id>
+        <publisher-id>THE FREEBSD PROJECT.  HTTPS://WWW.FREEBSD.ORG/</publisher-id>
+        <volume-size>1290995712</volume-size>
+      </iso>
+    </media>
+  </os>
+</libosinfo>
