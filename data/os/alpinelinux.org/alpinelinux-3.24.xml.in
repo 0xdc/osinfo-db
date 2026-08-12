@@ -70,7 +70,7 @@
     <!-- Standard Installer !-->
     <media arch="aarch64">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/aarch64/alpine-standard-3.24.0-aarch64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/aarch64/alpine-standard-3.24.1-aarch64.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* aarch64$</volume-id>
       </iso>
@@ -79,7 +79,7 @@
     </media>
     <media arch="i686">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-standard-3.24.0-x86.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-standard-3.24.1-x86.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* x86$</volume-id>
       </iso>
@@ -88,7 +88,7 @@
     </media>
     <media arch="x86_64">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-standard-3.24.0-x86_64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-standard-3.24.1-x86_64.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* x86_64$</volume-id>
       </iso>
@@ -97,7 +97,7 @@
     </media>
     <media arch="ppc64le">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/ppc64le/alpine-standard-3.24.0-ppc64le.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/ppc64le/alpine-standard-3.24.1-ppc64le.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* ppc64le$</volume-id>
       </iso>
@@ -106,7 +106,7 @@
     </media>
     <media arch="s390x">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/s390x/alpine-standard-3.24.0-s390x.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/s390x/alpine-standard-3.24.1-s390x.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* s390x$</volume-id>
       </iso>
@@ -115,7 +115,7 @@
     </media>
     <media arch="armv7l">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/armv7/alpine-standard-3.24.0-armv7.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/armv7/alpine-standard-3.24.1-armv7.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* armv7$</volume-id>
       </iso>
@@ -124,7 +124,7 @@
     </media>
     <media arch="loongarch64">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/loongarch64/alpine-standard-3.24.0-loongarch64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/loongarch64/alpine-standard-3.24.1-loongarch64.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* loongarch64$</volume-id>
       </iso>
@@ -133,7 +133,7 @@
     </media>
     <media arch="riscv64">
       <variant id="standard"/>
-      <url>https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/riscv64/alpine-standard-3.24.0-riscv64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/riscv64/alpine-standard-3.24.1-riscv64.iso</url>
       <iso>
         <volume-id>alpine-std 3\.24.* riscv64$</volume-id>
       </iso>
@@ -144,7 +144,7 @@
     <!-- Extended Installer !-->
     <media arch="i686">
       <variant id="extended"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-extended-3.24.0-x86.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-extended-3.24.1-x86.iso</url>
       <iso>
         <volume-id>alpine-ext 3\.24.* x86$</volume-id>
       </iso>
@@ -153,7 +153,7 @@
     </media>
     <media arch="x86_64">
       <variant id="extended"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-extended-3.24.0-x86_64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-extended-3.24.1-x86_64.iso</url>
       <iso>
         <volume-id>alpine-ext 3\.24.* x86_64$</volume-id>
       </iso>
@@ -164,7 +164,7 @@
     <!-- Virtual Installer !-->
     <media arch="aarch64">
       <variant id="virtual"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/aarch64/alpine-virt-3.24.0-aarch64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/aarch64/alpine-virt-3.24.1-aarch64.iso</url>
       <iso>
         <volume-id>alpine-virt 3\.24.* aarch64$</volume-id>
       </iso>
@@ -173,7 +173,7 @@
     </media>
     <media arch="i686">
       <variant id="virtual"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-virt-3.24.0-x86.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86/alpine-virt-3.24.1-x86.iso</url>
       <iso>
         <volume-id>alpine-virt 3\.24.* x86$</volume-id>
       </iso>
@@ -182,7 +182,7 @@
     </media>
     <media arch="x86_64">
       <variant id="virtual"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-virt-3.24.0-x86_64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-virt-3.24.1-x86_64.iso</url>
       <iso>
         <volume-id>alpine-virt 3\.24.* x86_64$</volume-id>
       </iso>
@@ -191,7 +191,7 @@
     </media>
     <media arch="armv7l">
       <variant id="virtual"/>
-      <url>https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/armv7/alpine-virt-3.24.0-armv7.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/armv7/alpine-virt-3.24.1-armv7.iso</url>
       <iso>
         <volume-id>alpine-virt 3\.24.* armv7$</volume-id>
       </iso>
@@ -202,7 +202,7 @@
     <!-- Xen Installer !-->
     <media arch="x86_64">
       <variant id="xen"/>
-      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-xen-3.24.0-x86_64.iso</url>
+      <url>https://dl-cdn.alpinelinux.org/v3.24/releases/x86_64/alpine-xen-3.24.1-x86_64.iso</url>
       <iso>
         <volume-id>alpine-xen 3\.24.* x86_64$</volume-id>
       </iso>
