@@ -1,0 +1,46 @@
+<libosinfo version="0.0.1">
+<!-- Licensed under the GNU General Public License version 2 or later.
+     See http://www.gnu.org/licenses/ for a copy of the license text -->
+  <os id="http://freebsd.org/freebsd/13.5">
+    <short-id>freebsd13.5</short-id>
+    <name>FreeBSD 13.5</name>
+    <version>13.5</version>
+    <vendor>FreeBSD Project</vendor>
+    <family>freebsd</family>
+    <distro>freebsd</distro>
+    <upgrades id="http://freebsd.org/freebsd/13.4"/>
+    <derives-from id="http://freebsd.org/freebsd/13.4"/>
+
+    <release-date>2025-03-11</release-date>
+    <eol-date>2026-04-30</eol-date>
+
+    <media arch="x86_64">
+      <url>http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-dvd1.iso</url>
+      <iso>
+        <system-id>FreeBSD</system-id>
+        <volume-id>13.5_RELEASE_AMD64_DVD</volume-id>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <url>http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-disc1.iso</url>
+      <iso>
+        <system-id>FreeBSD</system-id>
+        <volume-id>13.5_RELEASE_AMD64_CD</volume-id>
+      </iso>
+    </media>
+    <media arch="i686">
+      <url>http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-i386-dvd1.iso</url>
+      <iso>
+        <system-id>FreeBSD</system-id>
+        <volume-id>13.5_RELEASE_I386_DVD</volume-id>
+      </iso>
+    </media>
+    <media arch="i686">
+      <url>http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-i386-disc1.iso</url>
+      <iso>
+        <system-id>FreeBSD</system-id>
+        <volume-id>13.5_RELEASE_I386_CD</volume-id>
+      </iso>
+    </media>
+  </os>
+</libosinfo>
