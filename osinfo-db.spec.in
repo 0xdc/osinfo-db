@@ -1,5 +1,7 @@
 # -*- rpm-spec -*-
 
+%global source_date_epoch $(date --utc --date %{version} +%s)
+
 %define with_mingw 0
 %if 0%{?fedora}
     %define with_mingw 0%{!?_without_mingw:1}
@@ -51,9 +53,11 @@ operating systems for use with virtualization provisioning tools
 %autosetup
 
 %build
+export SOURCE_DATE_EPOCH=%{source_date_epoch}
 %make_build
 
 %install
+export SOURCE_DATE_EPOCH=%{source_date_epoch}
 %make_install OSINFO_DB_TARGET="--dir %{_datadir}/osinfo"
 %if 0%{?rhel}
 # Remove the upstream virtio-win / spice-guest-tools drivers
