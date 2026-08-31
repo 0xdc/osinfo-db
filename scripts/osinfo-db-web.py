@@ -59,7 +59,7 @@ for tag in tags:
     "release": {{
         "version": "{version}",
         "archive": "{DOWNLOAD_URL}/v{version}/downloads/osinfo-db-{version}.{DOWNLOAD_FORMAT}",
-        "signature": "{DOWNLOAD_URL}/v{version}/downloads/osinfo-db-{version}.{DOWNLOAD_FORMAT}.asc",
+        "signature": "{DOWNLOAD_URL}/v{version}/downloads/osinfo-db-{version}.{DOWNLOAD_FORMAT}.asc"
     }}
 }}""",
             file=fh,
