@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 import subprocess
 
-DOWNLOAD_URL = "https://releases.pagure.org/libosinfo"
+DOWNLOAD_URL = "https://gitlab.com/libosinfo/osinfo-db/-/releases"
 DOWNLOAD_FORMAT = "tar.xz"
 
 GITLAB_REPO_URL = "https://gitlab.com/libosinfo/osinfo-db"
@@ -58,8 +58,8 @@ for tag in tags:
     "version": 1,
     "release": {{
         "version": "{version}",
-        "archive": "{DOWNLOAD_URL}/osinfo-db-{version}.{DOWNLOAD_FORMAT}",
-        "signature": "{DOWNLOAD_URL}/osinfo-db-{version}.{DOWNLOAD_FORMAT}.asc"
+        "archive": "{DOWNLOAD_URL}/v{version}/downloads/osinfo-db-{version}.{DOWNLOAD_FORMAT}",
+        "signature": "{DOWNLOAD_URL}/v{version}/downloads/osinfo-db-{version}.{DOWNLOAD_FORMAT}.asc",
     }}
 }}""",
             file=fh,
